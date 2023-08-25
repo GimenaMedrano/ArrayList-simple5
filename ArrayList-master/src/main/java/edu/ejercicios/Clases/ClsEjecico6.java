@@ -46,15 +46,13 @@ private double sueldo_neto;
         ej.setDescuentos(500);
 
        int tarea_numero = 0;
-       for (TaskList tl : task) {
-           if (!tl.getIsDone()) {
-               System.out.println("Tarea: "+tl.getTaskName());
-               System.out.println("Descripcion: "+tl.getTaskDescription());
-               System.out.println("Estado: "+tl.getIsDone());
-           }
+       for (ClsEjercicio6 ej : list) {
+           System.out.println("Nombre: " + ej.getNombre());
+           System.out.println("Sueldo Neto: " + ej.getSueldo_neto());
+           System.out.println("Descuentos: " + ej.getDescuentos());
+       }
            tarea_numero++;
        }
    }
 
 
-}
